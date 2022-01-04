@@ -1,18 +1,15 @@
 <?php
 
-class Home
+class Home extends Controller
 {
     public function index()
     {
-        $this->view("home");
-    }
+        $DB = new Database();
+        $data = array(
+            'result' => $DB->viewUsers(),
+            'page_title' => WEBSITE_TITLE,
+        );
 
-    public function view($view)
-    {
-        if (file_exists("../app/views/main/" . $view . ".php")) {
-            include("../app/views/main/" . $view . ".php");
-        } else {
-            include("../app/views/404/404.php");
-        }
+        $this->view("home", $data);
     }
 }

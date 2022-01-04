@@ -15,6 +15,7 @@ class App
         }
 
         require("../app/controllers/" . $this->controller . ".php");
+
         $this->controller = new $this->controller;
 
         if (isset($url[1])) {

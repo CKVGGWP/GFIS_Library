@@ -1,8 +1,8 @@
 <?php
 
-function showURL($url)
+function show($param)
 {
     echo "<pre>";
-    print_r($url);
+    print_r($param);
     echo "</pre>";
 }
