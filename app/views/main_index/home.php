@@ -9,6 +9,11 @@
 
 <body>
 
+    <!-- Start of Nav -->
+
+    <?php include('../app/views/nav/nav.php'); ?>
+
+    <!-- End of Nav -->
 
     <!-- Start of Footer -->
 

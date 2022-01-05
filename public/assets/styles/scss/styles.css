@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 520px) {
+  nav .logo {
+    padding-left: 1rem !important;
+  }
+  nav button {
+    margin-right: 5px;
+  }
+  nav .navbar-nav .nav-item {
+    margin: 0 5px 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
